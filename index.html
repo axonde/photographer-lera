@@ -10,28 +10,33 @@
 <body>
 	<header>
 		<div class="menu">
-			<span class="menu__element"><a href="#">Главная</a></span>
-			<span class="menu__element"><a href="#">Портфолио</a></span>
-			<span class="menu__element"><a href="#">Цены и условия</a></span>
-			<span class="menu__element"><a href="#">Отзывы</a></span>
-			<span class="menu__element"><a href="#">Контакты</a></span>
-		</div>
-		<div class="menu--burger now-hidden">
-			<svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<rect width="24" height="2" fill="white"/>
-				<rect y="5" width="24" height="2" fill="white"/>
-				<rect y="10" width="24" height="2" fill="white"/>
-			</svg>
+			<div class="desktop__menu">
+				<span class="menu__element"><a href="#">Главная</a></span>
+				<span class="menu__element"><a href="#">Портфолио</a></span>
+				<span class="menu__element"><a href="#">Цены и условия</a></span>
+				<span class="menu__element"><a href="#">Отзывы</a></span>
+				<span class="menu__element"><a href="#">Контакты</a></span>
+			</div>
+			<div class="menu--burger now-hidden">
+				<svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="24" height="2" fill="white"/>
+					<rect y="5" width="24" height="2" fill="white"/>
+					<rect y="10" width="24" height="2" fill="white"/>
+				</svg>
+			</div>
+			<div class="mobile__menu now-hidden">
+				<a href="#"><span class="mobile__menu--element">Главная</span></a>
+				<a href="#"><span class="mobile__menu--element">Портфолио</span></a>
+				<a href="#"><span class="mobile__menu--element">Цены и условия</span></a>
+				<a href="#"><span class="mobile__menu--element">Отзывы</span></a>
+				<a href="#"><span class="mobile__menu--element">Контакты</span></a>
+			</div>
 		</div>
 	</header>
 
 	<main>
 
-		<div class="banner">
-			<div class="banner__item"></div>
-			<div class="banner__item"></div>
-			<div class="banner__item"></div>
-		</div>
+		<div class="banner"></div>
 
 		<div class="hi">
 			<div class="hi__text">
@@ -173,7 +178,7 @@
 				<a href='#'><span class="footer__menu--el">Отзывы</span></a>
 				<a href='#'><span class="footer__menu--el">Контакты</span></a>
 			</div>
-			<div class="copyright">CC BY-NC-SA К.А.Харитонова, 2022</div>
+			<div class="copyright"><span class="now-hidden">© </span>CC BY-NC-SA К.А.Харитонова, 2022</div>
 		</div>
 	</footer>
 </body>
