@@ -338,6 +338,20 @@ footer {
 }
 
 
+/* PORTFOLIO GALLERY */
+.portfolio-gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: stretch;
+	column-gap: 20px;
+	row-gap: 40px;
+	padding: 64px 9vw;
+}
+.portfolio-gallery__item img {
+	width: 100%;
+}
+
+
 /* RESPONSIVE STYLES */
 
 /* fixes */
@@ -396,6 +410,14 @@ footer {
 	/* footer */
 	footer {
 		padding: 50px 15vw;
+	}
+
+	/* portfolio gallery */
+	.portfolio-gallery {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		column-gap: 25px;
+		row-gap: 32px;
+		padding: 54px 3vw;
 	}
 }
 
@@ -569,5 +591,12 @@ footer {
 	}
 	.copyright::before {
 		display: none;
+	}
+
+	/* portfolio gallery */
+	.portfolio-gallery {
+		grid-template-columns: 1fr;
+		row-gap: 16px;
+		padding: 24px 2vw;
 	}
 }
