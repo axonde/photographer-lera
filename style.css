@@ -23,7 +23,17 @@ a {
 	--sizedestop-main: 18px;
 	--sizedesktop-descript: 16px;
 	--sizedesktop-button: 14px;
-	--sizedestop-footer: 20px
+	--sizedestop-footer: 20px;
+
+	--sizetablet-display: 36px;
+
+	--sizemobile-display: 36px;
+	--sizemobile-header: 32px;
+	--sizeemobile-medium: 24px;
+	--sizemobile-main: 18px;
+	--sizeemobile-descript: 16px;
+	--sizeemobile-button: 14px;
+	--sizemobile-footer: 20px;
 }
 
 /* connect fonts */
@@ -80,6 +90,9 @@ header {
 	align-items: center;
 	justify-content: space-around;
 	padding: 0 20px;
+}
+.menu__element {
+	font-size: var(--sizedestop-header);
 }
 
 
@@ -289,4 +302,95 @@ footer {
 	position: absolute;
 	top: 0;
 	left: -22px;
+}
+
+
+/* RESPONSIVE STYLES */
+
+/* fixes */
+@media (max-width: 1331px) {
+	.prices {
+		padding: 3vw;
+	}
+}
+
+/* --tablet-- */
+@media (max-width: 1194px) {
+	/* global styles */
+	.header {
+		font-size: var(--sizetablet-display);
+	}
+	.what-i-do,
+	.prices,
+	.feedback,
+	.contact {
+		padding: 3vw;
+		padding-top: 0;
+		padding-bottom: 56px;
+	}
+
+	/*menu*/
+	.menu__element {
+		font-size: var(--sizedesktop-medium);
+	}
+
+	/* hi */
+	.hi {
+		padding: 40px;
+	}
+	.hi__header {
+		font-size: var(--sizetablet-display);
+	}
+
+	/* what-i-do */
+	.what-i-do .gallery .gallery__photo {
+		height: 373px;
+	}
+
+	/* prices */
+	.prices {
+		padding: 2vw;
+	}
+	.prices__item {
+		flex-basis: 45%;
+		min-height: 446px;
+	}
+	.width-plus {
+		margin-top: 0;
+		padding-left: 0;
+	}
+
+	/* footer */
+	footer {
+		padding: 50px 15vw;
+	}
+}
+
+/* fixes */
+@media (max-width: 1080px) {
+	.prices__item {
+		min-height: 510px;
+	}
+}
+
+/* begin mobile styles */
+@media (max-width: 900px) {
+	/* prices */
+	.prices__items {
+		flex-direction: column;
+		align-items: center;
+	}
+	.prices__item {
+		min-height: 380px;
+		width: 90%;
+	}
+
+	/* feedback */
+	.feedback__items {
+		flex-direction: column;
+		align-items: center;
+	}
+	.feedback__item {
+		width: 90%;
+	}
 }
