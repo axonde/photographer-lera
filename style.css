@@ -306,6 +306,37 @@ footer {
 	left: -22px;
 }
 
+/* mobile menu styles*/
+
+.mobile__menu {
+	position: fixed;
+	background-color: var(--accent);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 15%;
+	justify-content: center;
+	padding-left: 50px;
+	transform: translateX(0);
+	transition: all 0.35s ease-in-out;
+}
+.mobile__menu--element {
+	display: block;
+}
+.mobile__menu.hidden {
+	transform: translateX(100vw);
+}
+.menu--burger {
+	z-index: 3;
+}
+.menu--burger:hover {
+	cursor: pointer;
+}
+
 
 /* RESPONSIVE STYLES */
 
@@ -428,9 +459,6 @@ footer {
 		align-items: center;
 		padding-right: 24px;
 	}
-	.menu--burger:hover {
-		cursor: pointer;
-	}
 
 
 	/* banner */
@@ -542,5 +570,4 @@ footer {
 	.copyright::before {
 		display: none;
 	}
-
 }
