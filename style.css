@@ -575,10 +575,10 @@ footer {
 	.footer__menu {
 		height: 72px;
 		flex-wrap: wrap;
-		gap: 1px;
+		gap: 8px;
 		justify-content: center;
 	}
-	.footer__menu--el {
+	.footer__menu--el{
 		font-size: var(--sizemobile-main);
 		margin-right: 10px;
 	}
