@@ -90,8 +90,16 @@
 		<div class="menu">
 			<div class="desktop__menu">
 				<span class="menu__element" id="link-1"><a href="#home">Главная</a></span>
-				<span class="menu__element"><a href="portfolio.html">Портфолио</a></span>
-				<span class="menu__element" id="link-2"><a href="#prices">Цены и условия</a></span>
+				<span class="menu__element for-dropdown">
+					<span class="z-index">Портфолио</span>
+					<div class="dropdown__menu">
+						<a href="portfolio-individuals.html"><span>Индивуальные<span></a>
+						<a href="portfolio-families.html"><span>Семейные</span></a>
+						<a href="portfolio-lovestory.html"><span>Love story</span></a>
+						<a href="portfolio-corporates.html"><span>Фоторепортаж</span></a>
+					</div>
+				</span>
+				<span class="menu__element z-index" id="link-2"><a href="#prices">Цены и условия</a></span>
 				<span class="menu__element" id="link-3"><a href="#feedback">Отзывы</a></span>
 				<span class="menu__element" id="link-4"><a href="#contact">Контакты</a></span>
 			</div>
@@ -104,7 +112,15 @@
 			</div>
 			<div class="mobile__menu hidden">
 				<a href="#home"><span class="mobile__menu--element">Главная</span></a>
-				<a href="portfolio.html"><span class="mobile__menu--element">Портфолио</span></a>
+				<span class="mobile__menu--element for-dropdown">
+					<span class="z-index">Портфолио</span>
+					<div class="dropdown__menu">
+						<a href="portfolio-individuals.html"><span>Индивуальные<span></a>
+						<a href="portfolio-families.html"><span>Семейные</span></a>
+						<a href="portfolio-lovestory.html"><span>Love story</span></a>
+						<a href="portfolio-corporates.html"><span>Фоторепортаж</span></a>
+					</div>
+				</span>
 				<a href="#prices"><span class="mobile__menu--element">Цены и условия</span></a>
 				<a href="#feedback"><span class="mobile__menu--element">Отзывы</span></a>
 				<a href="#contact"><span class="mobile__menu--element">Контакты</span></a>

@@ -16,8 +16,16 @@
 		<div class="menu">
 			<div class="desktop__menu">
 				<span class="menu__element" id="link-1"><a href="index.html#home">Главная</a></span>
-				<span class="menu__element"><a href="portfolio.html">Портфолио</a></span>
-				<span class="menu__element" id="link-2"><a href="index.html#prices">Цены и условия</a></span>
+				<span class="menu__element for-dropdown">
+					<span class="z-index">Портфолио</span>
+					<div class="dropdown__menu">
+						<a href="portfolio-individuals.html"><span>Индивуальные<span></a>
+						<a href="portfolio-families.html"><span>Семейные</span></a>
+						<a href="portfolio-lovestory.html"><span>Love story</span></a>
+						<a href="portfolio-corporates.html"><span>Фоторепортаж</span></a>
+					</div>
+				</span>
+				<span class="menu__element z-index" id="link-2"><a href="index.html#prices">Цены и условия</a></span>
 				<span class="menu__element" id="link-3"><a href="index.html#feedback">Отзывы</a></span>
 				<span class="menu__element" id="link-4"><a href="index.html#contact">Контакты</a></span>
 			</div>
@@ -29,8 +37,16 @@
 				</svg>
 			</div>
 			<div class="mobile__menu hidden">
-				<a href="index.html#home"><span class="mobile__menu--element">Главная</span></a>
-				<a href="#"><span class="mobile__menu--element">Портфолио</span></a>
+				<a href="#home"><span class="mobile__menu--element">Главная</span></a>
+				<span class="mobile__menu--element for-dropdown">
+					<span class="z-index">Портфолио</span>
+					<div class="dropdown__menu">
+						<a href="portfolio-individuals.html"><span>Индивуальные<span></a>
+						<a href="portfolio-families.html"><span>Семейные</span></a>
+						<a href="portfolio-lovestory.html"><span>Love story</span></a>
+						<a href="portfolio-corporates.html"><span>Фоторепортаж</span></a>
+					</div>
+				</span>
 				<a href="index.html#prices"><span class="mobile__menu--element">Цены и условия</span></a>
 				<a href="index.html#feedback"><span class="mobile__menu--element">Отзывы</span></a>
 				<a href="index.html#contact"><span class="mobile__menu--element">Контакты</span></a>
