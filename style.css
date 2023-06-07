@@ -347,6 +347,9 @@ footer {
 	row-gap: 40px;
 	padding: 64px 9vw;
 }
+.portfolio-gallery__item {
+	max-width: 350px;
+}
 .portfolio-gallery__item img {
 	width: 100%;
 }
