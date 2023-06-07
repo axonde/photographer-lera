@@ -78,6 +78,10 @@ body {
 
 
 /* menu */
+.space-header {
+	width: 100%;
+	height: 80px;
+}
 header {
 	background-color: var(--accent);
 	position: fixed;
@@ -512,6 +516,9 @@ footer {
 	}
 
 	/* menu */
+	.space-header {
+		height: 53px;
+	}
 	header {
 		height: 53px;
 	}
