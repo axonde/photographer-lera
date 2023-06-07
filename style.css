@@ -80,6 +80,10 @@ body {
 /* menu */
 header {
 	background-color: var(--accent);
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	z-index: 10;
 }
 .menu {
 	max-width: 1140px;
@@ -508,6 +512,9 @@ footer {
 	}
 
 	/* menu */
+	header {
+		height: 53px;
+	}
 	.desktop__menu {
 		display: none;
 	}
